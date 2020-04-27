@@ -1,0 +1,87 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Search for items and validate results",
+        "description": "",
+        "id": "search-and-place-order-for-vegetables;search-for-items-and-validate-results",
+        "after": [
+          {
+            "result": {
+              "duration": 402658600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterSmokeTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15712622400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on GREENKART landing page",
+            "match": {
+              "location": "StepDefinitionVegetables.user_is_on_greenkart_landing_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3700684800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User searches for Cucumber vegetable",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitionVegetables.user_searches_for_something_vegetable(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 32304800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "\"Cucumber\" results are displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Cucumber",
+                  "offset": 1
+                }
+              ],
+              "location": "StepDefinitionVegetables.something_results_are_displayed(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 2,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "Search and place order for vegetables",
+    "description": "",
+    "id": "search-and-place-order-for-vegetables",
+    "keyword": "Feature",
+    "uri": "Search.feature"
+  }
+]
