@@ -79,6 +79,14 @@ public class StepDefinition {
     	System.out.println("Validated home page");
     }
     
+    @Then("^Homepage is populated3$")
+    public void homepage_is_populated3() throws Throwable {
+        //home page validation
+    	System.out.println("Populated home page person 2");
+    	System.out.println("Populated home page person 1");
+    	System.out.println("Validated home page");
+    }
+    
     @And("^cards displayed are \"([^\"]*)\"$")
     public void cards_displayed_are(String arg1) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
