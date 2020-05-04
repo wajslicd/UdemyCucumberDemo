@@ -66,6 +66,7 @@ public class StepDefinition {
     @Then("^Homepage is populated$")
     public void homepage_is_populated() throws Throwable {
         //home page validation
+    	System.out.println("Populated home page");
     	System.out.println("Validated home page");
     }
     
